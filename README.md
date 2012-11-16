@@ -4,10 +4,10 @@ GirFFI-based bindings for Cairo
 
 ## Usage
 
-    require 'gir_ffi-gtk3'
     require 'gir_ffi-cairo'
 
-    # TODO: Add meaningful example here
+    dst = Cairo::ImageSurface.new(:argb32, 400, 300)
+    ctx = Cairo::Context.new(dst)
 
 ## Install
 
