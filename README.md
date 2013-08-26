@@ -2,6 +2,15 @@
 
 GirFFI-based bindings for Cairo
 
+## Features/Issues
+
+This gem allows use of Cairo from your GirFFI-based Gtk+ application. It
+is only a thin layer on top of the C library.
+
+Please note that this library is in the very early stages of
+development. Please file bugs for any functionality that is not yet
+implemented.
+
 ## Usage
 
     require 'gir_ffi-cairo'
