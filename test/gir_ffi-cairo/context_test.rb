@@ -8,10 +8,11 @@ describe Cairo::Context do
     end
   end
 
+  let(:instance) { Cairo::Context.create(nil) }
+
   describe "#get_target" do
     it "returns the context's target" do
-      obj = Cairo::Context.create(nil)
-      obj.get_target.must_be_instance_of Cairo::Surface
+      instance.get_target.must_be_instance_of Cairo::Surface
     end
   end
 end
