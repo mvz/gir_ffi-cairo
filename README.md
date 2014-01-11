@@ -2,8 +2,6 @@
 
 GirFFI-based bindings for Cairo
 
-[![Build Status](https://secure.travis-ci.org/mvz/gir_ffi-cairo.png)](http://travis-ci.org/mvz/gir_ffi-cairo)
-
 ## Features/Issues
 
 This gem allows use of Cairo from your GirFFI-based Gtk+ application. It
