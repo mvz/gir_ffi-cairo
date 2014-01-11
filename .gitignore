@@ -1,4 +1,5 @@
 .yardoc/
 doc/
+tmp/
 *.gem
 Gemfile.lock
