@@ -3,13 +3,15 @@ rvm:
   - 1.8.7
   - 1.9.2
   - 1.9.3
+  - 2.0.0
+  - 2.1.0
   - jruby-18mode
   - jruby-19mode
-  - 2.0.0
-  - rbx-18mode
-  - rbx-19mode
-# libgirepository1.0-dev: provides /usr/lib/libgirepository-1.0.so
-# gir1.2-freedesktop: provides /usr/lib/girepository-1.0/cairo-1.0.typelib
+  - rbx
 before_install:
   - sudo apt-get update
+  # libgirepository1.0-dev: provides /usr/lib/libgirepository-1.0.so
+  # gir1.2-freedesktop: provides /usr/lib/girepository-1.0/cairo-1.0.typelib
   - sudo apt-get install libgirepository1.0-dev gir1.2-freedesktop
+  - gem update --system 2.1.11
+  - gem --version
