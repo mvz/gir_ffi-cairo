@@ -1,4 +1,4 @@
-## Unreleased
+## 0.0.6 / 2016-01-21
 
 * Update dependency on gir_ffi to 0.9.0
 
