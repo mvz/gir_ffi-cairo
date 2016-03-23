@@ -1,3 +1,8 @@
+## 0.0.7 / 2016-03-23
+
+* Update dependency on gir_ffi to 0.10.0
+* Update rake dependency
+
 ## 0.0.6 / 2016-01-21
 
 * Update dependency on gir_ffi to 0.9.0
