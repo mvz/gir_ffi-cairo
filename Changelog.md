@@ -1,3 +1,8 @@
+## 0.0.9 / 2016-10-16
+
+* Add overrides for PDFSurface
+* Add drawing methods to Context
+
 ## 0.0.8 / 2016-10-16
 
 * Update dependency on gir_ffi to 0.11.0
@@ -15,12 +20,12 @@
 
 * Update dependencies
 
-## 0.0.4 / 2014-01-11 
+## 0.0.4 / 2014-01-11
 
 * Update dependencies
 * Expand Cairo::Context overrides
 
-## 0.0.3 / 2013-06-08 
+## 0.0.3 / 2013-06-08
 
 * Update dependencies
 * Update copyright info and licensing formatting

@@ -21,6 +21,13 @@ file bugs for any functionality that is not yet implemented.
 
     gem install gir_ffi-cairo
 
+## Contributors
+
+The following people have contributed to GirFFI-Cairo:
+
+* Natsuki Yagi
+* Matijs van Zuijlen
+
 ## License
 
 Copyright &copy; 2012&ndash;2016, [Matijs van Zuijlen](http://www.matijs.net/)
