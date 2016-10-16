@@ -16,4 +16,20 @@ describe Cairo::Context do
     ctx.fill
     pass
   end
+
+  describe 'PDF' do
+    before { @path = 'integration-test.pdf' }
+    after  { File.delete(@path) if File.exist? @path }
+
+    it "can create pdf" do
+      Cairo::PDFSurface.create(@path, 400, 300) {|surface|
+        ctx = Cairo::Context.create(surface)
+        ctx.arc(300, 200, 100, 0, 2 * Math::PI)
+        ctx.set_source_rgba(1, 1, 0, 0.5)
+        ctx.fill
+        ctx.show_page
+      }
+      pass
+    end
+  end
 end
