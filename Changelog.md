@@ -1,3 +1,7 @@
+## 0.0.8 / 2016-10-16
+
+* Update dependency on gir_ffi to 0.11.0
+
 ## 0.0.7 / 2016-03-23
 
 * Update dependency on gir_ffi to 0.10.0
