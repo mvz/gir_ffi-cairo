@@ -10,4 +10,3 @@ module Cairo
     attach_function :cairo_image_surface_create, [Cairo::Format, :int, :int], :pointer
   end
 end
-

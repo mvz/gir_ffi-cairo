@@ -12,4 +12,3 @@ describe Cairo::ImageSurface do
     end
   end
 end
-

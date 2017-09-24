@@ -26,4 +26,3 @@ describe Cairo::PDFSurface do
 
   end
 end
-
