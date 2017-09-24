@@ -1,5 +1,6 @@
 .yardoc/
-doc/
+doc/*
+!doc/dependency_decisions.yml
 tmp/
 *.gem
 Gemfile.lock
