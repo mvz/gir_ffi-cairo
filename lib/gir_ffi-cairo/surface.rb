@@ -1,19 +1,19 @@
-module Cairo
-  load_class :Surface
+Cairo.load_class :Surface
 
+module Cairo
+  # Overrides for CairoSurface (cairo_surface_t)
   class Surface
-    # TODO: Add overrides
     def flush
       Lib.cairo_surface_flush(self)
     end
+
     def finish
       Lib.cairo_surface_finish(self)
     end
   end
+end
 
-  module Lib
-    # TODO: Attach functions
-    attach_function :cairo_surface_flush, [:pointer], :void
-    attach_function :cairo_surface_finish, [:pointer], :void
-  end
+Cairo::Lib.module_eval do
+  attach_function :cairo_surface_flush, [:pointer], :void
+  attach_function :cairo_surface_finish, [:pointer], :void
 end

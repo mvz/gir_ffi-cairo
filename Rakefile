@@ -16,9 +16,9 @@ namespace :test do
     t.warning = true
   end
 
-  task :all => [:unit, :integration]
+  task all: [:unit, :integration]
 end
 
-task :test => 'test:all'
+task test: 'test:all'
 
-task :default => 'test'
+task default: 'test'

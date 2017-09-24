@@ -1,0 +1,24 @@
+AllCops:
+  Exclude:
+    - 'tmp/**/*'
+
+# Test describe blocks can be any size
+Metrics/BlockLength:
+  Exclude:
+    - 'test/**/*'
+
+# Require lines to fit in pull requests.
+Metrics/LineLength:
+  Max: 92
+
+# Gtk+ has a lot of accessor method starting with get_ or set_
+Naming/AccessorMethodName:
+  Enabled: false
+
+# GirFFI uses a ffi-something naming scheme.
+Naming/FileName:
+  Enabled: false
+
+# I like to have symbols always look like symbols
+Style/SymbolArray:
+  EnforcedStyle: brackets
