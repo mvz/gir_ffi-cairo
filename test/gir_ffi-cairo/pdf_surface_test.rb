@@ -16,10 +16,10 @@ describe Cairo::PDFSurface do
 
     it 'creates a new Cairo::PDFSurface with block' do
       called = nil
-      Cairo::PDFSurface.create(@path, 300, 200) {|surface|
+      Cairo::PDFSurface.create(@path, 300, 200) do |surface|
         surface.must_be_instance_of Cairo::PDFSurface
         called = true
-      }
+      end
       refute_nil called
       assert File.exist?(@path)
     end
