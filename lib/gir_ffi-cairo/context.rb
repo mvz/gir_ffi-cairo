@@ -64,7 +64,7 @@ module Cairo
     attach_function :cairo_move_to, [:pointer, :double, :double], :void
     attach_function :cairo_line_to, [:pointer, :double, :double], :void
     attach_function :cairo_arc,
-      [:pointer, :double, :double, :double, :double, :double], :void
+                    [:pointer, :double, :double, :double, :double, :double], :void
     attach_function :cairo_close_path, [:pointer], :void
     attach_function :cairo_rectangle, [:pointer, :double, :double, :double, :double], :void
 
@@ -72,7 +72,7 @@ module Cairo
     attach_function :cairo_stroke, [:pointer], :void
 
     attach_function :cairo_set_source_rgba,
-      [:pointer, :double, :double, :double, :double], :void
+                    [:pointer, :double, :double, :double, :double], :void
 
     attach_function :cairo_save, [:pointer], :void
     attach_function :cairo_restore, [:pointer], :void
