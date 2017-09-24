@@ -2,7 +2,7 @@ module Cairo
   class ImageSurface < Surface
     def self.create format, width, height
       ptr = Lib.cairo_image_surface_create format, width, height
-      self.wrap ptr
+      wrap ptr
     end
   end
 

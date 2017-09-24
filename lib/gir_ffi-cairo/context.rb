@@ -4,7 +4,7 @@ module Cairo
   class Context
     def self.create target
       ptr = Lib.cairo_create target
-      self.wrap ptr
+      wrap ptr
     end
 
     def move_to(x, y)

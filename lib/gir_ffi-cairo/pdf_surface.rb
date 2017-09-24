@@ -2,7 +2,7 @@ module Cairo
   class PDFSurface < Surface
     def self.create filename, width, height
       ptr = Lib.cairo_pdf_surface_create filename, width, height
-      surface = self.wrap ptr
+      surface = wrap ptr
 
       if block_given?
         yield surface
