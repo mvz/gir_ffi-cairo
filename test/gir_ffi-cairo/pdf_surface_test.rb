@@ -23,6 +23,5 @@ describe Cairo::PDFSurface do
       refute_nil called
       assert File.exist?(@path)
     end
-
   end
 end
