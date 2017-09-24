@@ -2,7 +2,7 @@ module Cairo
   load_class :Context
 
   class Context
-    def self.create target
+    def self.create(target)
       ptr = Lib.cairo_create target
       wrap ptr
     end
@@ -23,7 +23,7 @@ module Cairo
       Lib.cairo_rectangle self, x, y, width, height
     end
 
-    def arc xc, yc, radius, angle1, angle2
+    def arc(xc, yc, radius, angle1, angle2)
       Lib.cairo_arc self, xc, yc, radius, angle1, angle2
     end
 
@@ -40,7 +40,7 @@ module Cairo
       Surface.wrap ptr
     end
 
-    def set_source_rgba red, green, blue, alpha
+    def set_source_rgba(red, green, blue, alpha)
       Lib.cairo_set_source_rgba self, red, green, blue, alpha
     end
 
