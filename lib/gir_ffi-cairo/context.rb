@@ -1,6 +1,7 @@
-module Cairo
-  load_class :Context
+Cairo.load_class :Context
 
+module Cairo
+  # Overrides for CairoContext (cairo_t)
   class Context
     def self.create(target)
       ptr = Lib.cairo_create target
@@ -56,26 +57,26 @@ module Cairo
       Lib.cairo_show_page self
     end
   end
+end
 
-  module Lib
-    attach_function :cairo_create, [:pointer], :pointer
-    attach_function :cairo_get_target, [:pointer], :pointer
+Cairo::Lib.module_eval do
+  attach_function :cairo_create, [:pointer], :pointer
+  attach_function :cairo_get_target, [:pointer], :pointer
 
-    attach_function :cairo_move_to, [:pointer, :double, :double], :void
-    attach_function :cairo_line_to, [:pointer, :double, :double], :void
-    attach_function :cairo_arc,
-                    [:pointer, :double, :double, :double, :double, :double], :void
-    attach_function :cairo_close_path, [:pointer], :void
-    attach_function :cairo_rectangle, [:pointer, :double, :double, :double, :double], :void
+  attach_function :cairo_move_to, [:pointer, :double, :double], :void
+  attach_function :cairo_line_to, [:pointer, :double, :double], :void
+  attach_function :cairo_arc,
+                  [:pointer, :double, :double, :double, :double, :double], :void
+  attach_function :cairo_close_path, [:pointer], :void
+  attach_function :cairo_rectangle, [:pointer, :double, :double, :double, :double], :void
 
-    attach_function :cairo_fill, [:pointer], :void
-    attach_function :cairo_stroke, [:pointer], :void
+  attach_function :cairo_fill, [:pointer], :void
+  attach_function :cairo_stroke, [:pointer], :void
 
-    attach_function :cairo_set_source_rgba,
-                    [:pointer, :double, :double, :double, :double], :void
+  attach_function :cairo_set_source_rgba,
+                  [:pointer, :double, :double, :double, :double], :void
 
-    attach_function :cairo_save, [:pointer], :void
-    attach_function :cairo_restore, [:pointer], :void
-    attach_function :cairo_show_page, [:pointer], :void
-  end
+  attach_function :cairo_save, [:pointer], :void
+  attach_function :cairo_restore, [:pointer], :void
+  attach_function :cairo_show_page, [:pointer], :void
 end
