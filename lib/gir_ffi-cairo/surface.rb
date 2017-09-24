@@ -6,6 +6,7 @@ module Cairo
     def flush
       Lib.cairo_surface_flush(self)
     end
+
     def finish
       Lib.cairo_surface_finish(self)
     end
