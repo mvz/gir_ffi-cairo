@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cairo
   Format = Lib.enum :Format, [
     :invalid, -1,

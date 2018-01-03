@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Cairo
   # Surface subclass for (bitmap) images.
   class ImageSurface < Surface

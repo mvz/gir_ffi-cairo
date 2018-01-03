@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Cairo.load_class :Context
 
 module Cairo
