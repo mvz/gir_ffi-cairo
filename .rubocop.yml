@@ -1,6 +1,7 @@
 AllCops:
   Exclude:
     - 'tmp/**/*'
+  TargetRubyVersion: 2.3
 
 # Test describe blocks can be any size
 Metrics/BlockLength:
