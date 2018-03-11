@@ -20,6 +20,13 @@ Naming/AccessorMethodName:
 Naming/FileName:
   Enabled: false
 
+Naming/UncommunicativeMethodParamName:
+  AllowedNames:
+    - x
+    - y
+    - xc
+    - yc
+
 # I like to have symbols always look like symbols
 Style/SymbolArray:
   EnforcedStyle: brackets
