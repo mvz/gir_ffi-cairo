@@ -1,3 +1,8 @@
+## 0.0.10 / 2018-03-24
+
+* Update dependency on gir_ffi to 0.12.0
+* Drop support for Ruby versions below 2.3
+
 ## 0.0.9 / 2016-10-16
 
 * Add overrides for PDFSurface
