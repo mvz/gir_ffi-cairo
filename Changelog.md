@@ -1,8 +1,9 @@
 # Changelog
 
-## Unreleased
+## 0.0.13 / 2019-10-20
 
-* Drop support for Ruby 2.2
+* Update dependency on `gir_ffi` to 0.15.1
+* Drop support for Ruby 2.2 and 2.3
 
 ## 0.0.12 / 2018-09-08
 
