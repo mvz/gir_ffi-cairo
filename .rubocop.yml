@@ -7,6 +7,10 @@ AllCops:
     - 'tmp/**/*'
   TargetRubyVersion: 2.4
 
+# Use lenient line length
+Layout/LineLength:
+  Max: 95
+
 # Don't force lonely closing parentheses
 Layout/MultilineMethodCallBraceLayout:
   EnforcedStyle: same_line
@@ -37,10 +41,6 @@ Metrics/BlockLength:
   Exclude:
     - 'test/**/*' # Test describe blocks can be any size
     - '*.gemspec' # Gem spec blocks can be any size
-
-# Use lenient line length
-Metrics/LineLength:
-  Max: 92
 
 # Allow and/or for control flow only
 Style/AndOr:
