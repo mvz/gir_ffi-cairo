@@ -1,10 +1,12 @@
 require:
   - rubocop-performance
+  - rubocop-minitest
 
 AllCops:
   Exclude:
     - 'examples/*'
     - 'tmp/**/*'
+  NewCops: enable
   TargetRubyVersion: 2.5
 
 # Be lenient with line length
@@ -42,6 +44,9 @@ Metrics/BlockLength:
     - 'test/**/*' # Test describe blocks can be any size
     - '*.gemspec' # Gem spec blocks can be any size
 
+Performance/StartWith:
+  AutoCorrect: true
+
 # Allow and/or for control flow only
 Style/AndOr:
   EnforcedStyle: conditionals
@@ -64,10 +69,6 @@ Style/PercentLiteralDelimiters:
 Style/RedundantReturn:
   AllowMultipleReturnValues: true
 
-# Allow meaningful names for single-line reduce etc.
-Style/SingleLineBlockParams:
-  Enabled: false
-
 # Do not commit to use of interpolation
 Style/StringLiterals:
   EnforcedStyle: double_quotes
@@ -76,27 +77,9 @@ Style/StringLiterals:
 Style/SymbolArray:
   EnforcedStyle: brackets
 
-# Activate new cops from RuboCop 0.80 - 0.84
-Layout/EmptyLinesAroundAttributeAccessor:
-  Enabled: true
-Layout/SpaceAroundMethodCallOperator:
-  Enabled: true
-Lint/DeprecatedOpenSSLConstant:
-  Enabled: true
-Lint/RaiseException:
-  Enabled: true
-Lint/StructNewOverride:
-  Enabled: true
-Style/ExponentialNotation:
-  Enabled: true
-Style/HashEachMethods:
-  Enabled: true
-Style/HashTransformKeys:
-  Enabled: true
-Style/HashTransformValues:
-  Enabled: true
-Style/SlicingWithRange:
-  Enabled: true
+# Accessors are only trivial if they match the ivar name
+Style/TrivialAccessors:
+  ExactNameMatch: true
 
 # Project-specific configuration goes here.
 
