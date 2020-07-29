@@ -23,7 +23,7 @@ describe Cairo::PDFSurface do
         called = true
       end
       refute_nil called
-      assert File.exist?(@path)
+      assert_path_exists(@path)
     end
   end
 end
