@@ -2,6 +2,7 @@
 
 require "bundler/gem_helper"
 require "rake/testtask"
+require "rake/manifest/task"
 
 Bundler::GemHelper.install_tasks
 
@@ -23,4 +24,9 @@ end
 
 task test: "test:all"
 
+Rake::Manifest::Task.new do |t|
+  t.patterns = ["lib/**/*", "COPYING.LIB"]
+end
+
 task default: "test"
+task build: "manifest:check"

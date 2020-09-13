@@ -1,0 +1,8 @@
+lib/gir_ffi-cairo
+lib/gir_ffi-cairo.rb
+lib/gir_ffi-cairo/context.rb
+lib/gir_ffi-cairo/format.rb
+lib/gir_ffi-cairo/image_surface.rb
+lib/gir_ffi-cairo/pdf_surface.rb
+lib/gir_ffi-cairo/surface.rb
+COPYING.LIB
