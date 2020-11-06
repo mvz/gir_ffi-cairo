@@ -50,6 +50,10 @@ Metrics/BlockLength:
     - 'test/**/*' # Test describe blocks can be any size
     - '*.gemspec' # Gem spec blocks can be any size
 
+# Allow semantic variation in and/or external determination of symbols
+Naming/VariableNumber:
+  CheckSymbols: false
+
 Performance/StartWith:
   AutoCorrect: true
 
