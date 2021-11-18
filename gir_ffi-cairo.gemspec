@@ -3,6 +3,7 @@
 Gem::Specification.new do |spec|
   spec.name = "gir_ffi-cairo"
   spec.version = "0.0.13"
+
   spec.authors = ["Matijs van Zuijlen"]
   spec.email = ["matijs@matijs.net"]
 
@@ -18,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/mvz/gir_ffi-cairo"
   spec.metadata["changelog_uri"] = "https://github.com/mvz/gir_ffi-cairo/blob/master/Changelog.md"
+  spec.metadata["rubygems_mfa_required"] = "true"
 
   spec.files = File.read("Manifest.txt").split
   spec.rdoc_options = ["--main", "README.md"]
@@ -29,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest", "~> 5.12"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rake-manifest", "~> 0.2.0"
-  spec.add_development_dependency "rubocop", "~> 1.22.0"
+  spec.add_development_dependency "rubocop", "~> 1.23.0"
   spec.add_development_dependency "rubocop-minitest", "~> 0.16.0"
   spec.add_development_dependency "rubocop-packaging", "~> 0.5.0"
   spec.add_development_dependency "rubocop-performance", "~> 1.12.0"
