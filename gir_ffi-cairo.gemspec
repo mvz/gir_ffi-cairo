@@ -3,6 +3,7 @@
 Gem::Specification.new do |spec|
   spec.name = "gir_ffi-cairo"
   spec.version = "0.0.13"
+
   spec.authors = ["Matijs van Zuijlen"]
   spec.email = ["matijs@matijs.net"]
 
@@ -18,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/mvz/gir_ffi-cairo"
   spec.metadata["changelog_uri"] = "https://github.com/mvz/gir_ffi-cairo/blob/master/Changelog.md"
+  spec.metadata["rubygems_mfa_required"] = "true"
 
   spec.files = File.read("Manifest.txt").split
   spec.rdoc_options = ["--main", "README.md"]
