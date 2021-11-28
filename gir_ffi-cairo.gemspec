@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
+require_relative "lib/gir_ffi-cairo/version"
+
 Gem::Specification.new do |spec|
   spec.name = "gir_ffi-cairo"
-  spec.version = "0.0.13"
-
+  spec.version = GirFFICairo::VERSION
   spec.authors = ["Matijs van Zuijlen"]
   spec.email = ["matijs@matijs.net"]
 
@@ -13,7 +14,6 @@ Gem::Specification.new do |spec|
   DESC
   spec.homepage = "http://www.github.com/mvz/gir_ffi-cairo"
   spec.license = "LGPL-2.1"
-
   spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
