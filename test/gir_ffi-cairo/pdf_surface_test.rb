@@ -9,7 +9,7 @@ describe Cairo::PDFSurface do
 
   describe ".create" do
     before { @path = "test.pdf" }
-    after  { File.delete(@path) if File.exist? @path }
+    after  { FileUtils.rm(@path, force: true) }
 
     it "creates a new Cairo::PDFSurface" do
       obj = Cairo::PDFSurface.create(@path, 300, 200)

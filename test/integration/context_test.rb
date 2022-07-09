@@ -21,7 +21,7 @@ describe Cairo::Context do
 
   describe "PDF" do
     before { @path = "integration-test.pdf" }
-    after  { File.delete(@path) if File.exist? @path }
+    after  { FileUtils.rm(@path, force: true) }
 
     it "can create pdf" do
       Cairo::PDFSurface.create(@path, 400, 300) do |surface|
@@ -31,7 +31,7 @@ describe Cairo::Context do
         ctx.fill
         ctx.show_page
       end
-      pass
+      assert_path_exists @path
     end
   end
 end
