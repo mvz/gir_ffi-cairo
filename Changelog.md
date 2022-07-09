@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.15 / 2022-07-09
+
+* Update dependency on `gir_ffi` to 0.16.0
+* Drop support for Ruby 2.6 and JRuby
+
 ## 0.0.14 / 2022-01-21
 
 * Update dependency on `gir_ffi` to 0.15.2
