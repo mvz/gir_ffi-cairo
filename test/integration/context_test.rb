@@ -31,6 +31,7 @@ describe Cairo::Context do
         ctx.fill
         ctx.show_page
       end
+
       assert_path_exists @path
     end
   end
