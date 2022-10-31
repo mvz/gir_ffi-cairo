@@ -22,6 +22,7 @@ describe Cairo::PDFSurface do
         _(surface).must_be_instance_of Cairo::PDFSurface
         called = true
       end
+
       refute_nil called
       assert_path_exists(@path)
     end
