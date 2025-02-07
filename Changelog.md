@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.0.17 / 2025-02-07
+
+* Support Ruby 3.1 through 3.4, dropping support for Ruby 3.0 ([#97] by [mvz])
+* Update `gir_ffi` dependency to version 0.18.0 ([#98] by [mvz])
+
+[mvz]: https://github.com/mvz
+
+[#97]: https://github.com/mvz/gir_ffi-cairo/pull/97
+[#98]: https://github.com/mvz/gir_ffi-cairo/pull/98
+
 ## 0.0.16 / 2024-01-01
 
 * Update dependency on `gir_ffi` to 0.17.0
