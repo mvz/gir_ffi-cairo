@@ -13,6 +13,7 @@ describe Cairo::PDFSurface do
 
     it "creates a new Cairo::PDFSurface" do
       obj = Cairo::PDFSurface.create(@path, 300, 200)
+
       _(obj).must_be_instance_of Cairo::PDFSurface
     end
 
