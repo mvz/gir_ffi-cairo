@@ -10,6 +10,7 @@ describe Cairo::ImageSurface do
   describe ".create" do
     it "creates a new Cairo::ImageSurface" do
       obj = Cairo::ImageSurface.create(:argb32, 300, 200)
+
       _(obj).must_be_instance_of Cairo::ImageSurface
     end
   end

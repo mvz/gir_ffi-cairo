@@ -6,6 +6,7 @@ describe Cairo::Context do
   describe ".create" do
     it "creates a new Cairo::Context" do
       obj = Cairo::Context.create(nil)
+
       _(obj).must_be_instance_of Cairo::Context
     end
   end

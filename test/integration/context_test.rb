@@ -6,6 +6,7 @@ describe Cairo::Context do
   it "can retrieve the surface it was created for" do
     dst = Cairo::ImageSurface.create(:argb32, 400, 300)
     ctx = Cairo::Context.create(dst)
+
     _(ctx.get_target.to_ptr).must_equal dst.to_ptr
     pass
   end
